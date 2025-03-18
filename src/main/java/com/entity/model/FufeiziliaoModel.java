@@ -1,0 +1,201 @@
+package com.entity.model;
+
+import com.entity.FufeiziliaoEntity;
+
+import com.baomidou.mybatisplus.annotations.TableName;
+import com.fasterxml.jackson.annotation.JsonFormat;
+import java.util.Date;
+import org.springframework.format.annotation.DateTimeFormat;
+import java.io.Serializable;
+ 
+
+/**
+ * 付费资料
+ * 接收传参的实体类  
+ *（实际开发中配合移动端接口开发手动去掉些没用的字段， 后端一般用entity就够用了） 
+ * 取自ModelAndView 的model名称
+ * @author 
+ * @email 
+ * @date 2021-02-05 09:40:21
+ */
+public class FufeiziliaoModel  implements Serializable {
+	private static final long serialVersionUID = 1L;
+
+	 			
+	/**
+	 * 课程名称
+	 */
+	
+	private String kechengmingcheng;
+		
+	/**
+	 * 资料名称
+	 */
+	
+	private String ziliaomingcheng;
+		
+	/**
+	 * 资料图片
+	 */
+	
+	private String ziliaotupian;
+		
+	/**
+	 * 价格
+	 */
+	
+	private Integer jiage;
+		
+	/**
+	 * 内容
+	 */
+	
+	private String neirong;
+		
+	/**
+	 * 资料详情
+	 */
+	
+	private String ziliaoxiangqing;
+		
+	/**
+	 * 赞
+	 */
+	
+	private Integer thumbsupnum;
+		
+	/**
+	 * 踩
+	 */
+	
+	private Integer crazilynum;
+				
+	
+	/**
+	 * 设置：课程名称
+	 */
+	 
+	public void setKechengmingcheng(String kechengmingcheng) {
+		this.kechengmingcheng = kechengmingcheng;
+	}
+	
+	/**
+	 * 获取：课程名称
+	 */
+	public String getKechengmingcheng() {
+		return kechengmingcheng;
+	}
+				
+	
+	/**
+	 * 设置：资料名称
+	 */
+	 
+	public void setZiliaomingcheng(String ziliaomingcheng) {
+		this.ziliaomingcheng = ziliaomingcheng;
+	}
+	
+	/**
+	 * 获取：资料名称
+	 */
+	public String getZiliaomingcheng() {
+		return ziliaomingcheng;
+	}
+				
+	
+	/**
+	 * 设置：资料图片
+	 */
+	 
+	public void setZiliaotupian(String ziliaotupian) {
+		this.ziliaotupian = ziliaotupian;
+	}
+	
+	/**
+	 * 获取：资料图片
+	 */
+	public String getZiliaotupian() {
+		return ziliaotupian;
+	}
+				
+	
+	/**
+	 * 设置：价格
+	 */
+	 
+	public void setJiage(Integer jiage) {
+		this.jiage = jiage;
+	}
+	
+	/**
+	 * 获取：价格
+	 */
+	public Integer getJiage() {
+		return jiage;
+	}
+				
+	
+	/**
+	 * 设置：内容
+	 */
+	 
+	public void setNeirong(String neirong) {
+		this.neirong = neirong;
+	}
+	
+	/**
+	 * 获取：内容
+	 */
+	public String getNeirong() {
+		return neirong;
+	}
+				
+	
+	/**
+	 * 设置：资料详情
+	 */
+	 
+	public void setZiliaoxiangqing(String ziliaoxiangqing) {
+		this.ziliaoxiangqing = ziliaoxiangqing;
+	}
+	
+	/**
+	 * 获取：资料详情
+	 */
+	public String getZiliaoxiangqing() {
+		return ziliaoxiangqing;
+	}
+				
+	
+	/**
+	 * 设置：赞
+	 */
+	 
+	public void setThumbsupnum(Integer thumbsupnum) {
+		this.thumbsupnum = thumbsupnum;
+	}
+	
+	/**
+	 * 获取：赞
+	 */
+	public Integer getThumbsupnum() {
+		return thumbsupnum;
+	}
+				
+	
+	/**
+	 * 设置：踩
+	 */
+	 
+	public void setCrazilynum(Integer crazilynum) {
+		this.crazilynum = crazilynum;
+	}
+	
+	/**
+	 * 获取：踩
+	 */
+	public Integer getCrazilynum() {
+		return crazilynum;
+	}
+			
+}
